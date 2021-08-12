@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.heading {
+  text-align: center;
+}
+.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+}
+.blok {
+  background-color: black;
+  height: 450px;
+  width: 500px;
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: aliceblue;
+}
+.blok .buttons .first {
+  margin: 10px;
+  padding: 20px;
+}
+.blok .buttons .first .label {
+  margin: 20px;
+}
+.table {
+  margin: 10px;
+  padding: 10px;
+}

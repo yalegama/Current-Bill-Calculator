@@ -5,8 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <div>
+        <h1 id="heading" class="heading">Electricity Bill Calculator</h1>
+    </div>
+    <div class="image">
+        <img src="./images/ecb.png" alt="">
+    </div>
+    <!-- Color Blok -->
+    <div id="blok" class="blok">
+        <div class="buttons">
+            <div">
+                <form action="" class="first">
+                    <!-- Labels -->
+                    <div class="label">
+                        <label for="">Enter Your Name : </label>
+                    <input id="name" type="text" style="margin-left: 50px;">
+                    </div>
+                    <div class="label">
+                        <label for="">Your Home Address : </label>
+                        <input id="address" type="text" style="margin-left: 30px;">
+                    </div>
+                    <div class="label">
+                        <label for="">Used Units : </label>
+                        <input id="units" type="number" placeholder="EG: 25" style="margin-left: 90px;">
+                    </div>
+                    <div class="label">
+                        <label for="">Used Dates : </label>
+                        <input id="dates" type="number" name="" id="" placeholder="EG: 30" style="margin-left: 89px;">
+                    </div>
+                    <!-- Buttons -->
+                    <div class="buttons">
+                        <button id="rest" type="button" 
+                        style="margin-left: 195px; cursor: pointer; " onclick="Reset()"><b>RESET</b></button>
+                        <button id="calculate" type="button" 
+                        style="margin-left: 50px; cursor: pointer;" onclick="Calculate()"><b>Calculate</b></button>
+                        
+                    </div>
+                </form>
+                <div class="table" style="display: none;" id="table">
+                     <form action="">
+                         <div>
+                             <label for="">Name : </label>
+                             <label for="" id="tname"></label>
+                         </div>
+                         <div>
+                            <label for="">Address : </label>
+                            <label for="" id="taddress"></label>
+                        </div>
+                        <div>
+                            <label for="">Units : </label>
+                            <label for="" id="tunit"></label>
+                        </div>
+                        <div>
+                            <label for="">Dates : </label>
+                            <label for="" id="tdates"></label>
+                        </div>
+                     </form>
+                    
+                    <div class="bill">
+                        <h2 id="payBill"></h2>
+                    </div>
+                    <button id="refresh" type="button" onclick="Reload()" style="cursor: pointer;">Refresh</button>
+                        <button id="print" type="button" onclick="Print()" style="cursor: pointer;">Print</button>
+            </div>
+        </div>
+    </div>
     
+<div>
+   
+
 </body>
+<script src="./script.js"></script>
 </html>
